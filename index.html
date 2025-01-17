@@ -11,32 +11,34 @@
 </head>
 <body>
     <!-- Main Register Container -->
-    <div class="register-container">
-        <!-- Left Section: Register Form -->
-        <div class="register-form">
-            <h1>Create Account</h1>
-            <p>Fill in the form to register.</p>
+<div class="register-container">
+    <!-- Left Section: Register Form -->
+    <div class="register-form">
+        <h1>Bikin Akun Yuk!</h1>
+        <p>Isi form ini buat gabung sama kita, gampang kok!</p>
 
-            <!-- Input Fields -->
-            <input type="text" id="nameInput" placeholder="Enter your Username" required>
-            <input type="email" id="emailInput" placeholder="Enter your Email" required>
-            <input type="password" id="passwordInput" placeholder="Enter your Password" required>
-            <button id="registerButton">Register</button>
+        <!-- Input Fields -->
+        <input type="text" id="nameInput" placeholder="Nama kamu siapa nih?" required>
+        <input type="text" id="phoneInput" placeholder="No HP kamu berapa?" required>
+        <input type="email" id="emailInput" placeholder="Masukin email kamu dong!" required>
+        <input type="password" id="passwordInput" placeholder="Bikin password yang gampang diinget ya!" required>
+        <button id="registerButton">Daftar Sekarang</button>
 
-            <!-- OR Separator -->
-            <div class="or-separator">OR</div>
+        <!-- OR Separator -->
+        <div class="or-separator">ATAU</div>
 
-            <!-- Already Have Account Section -->
-            <div class="login-link">
-                <p>Sudah punya akun? <a href="login.html" class="login-link-text">Masuk!</a></p>
-            </div>
-        </div>
-
-        <!-- Right Section: QR Code Graphic -->
-        <div class="register-graphic">
-            <img src="images/qr.png" alt="QR Code">
+        <!-- Already Have Account Section -->
+        <div class="login-link">
+            <p>Udah punya akun? <a href="https://qrcreate.github.io/login/" class="login-link-text">Langsung login aja!</a></p>
         </div>
     </div>
+
+    <!-- Right Section: QR Code Graphic -->
+    <div class="register-graphic">
+        <img src="images/qr.png" alt="QR Code">
+    </div>
+</div>
+
 
     <!-- SweetAlert2 JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
