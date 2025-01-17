@@ -6,10 +6,9 @@ function register() {
     const name = document.getElementById("nameInput").value.trim();
     const phone = document.getElementById("phoneInput").value.trim();
     const email = document.getElementById("emailInput").value.trim();
-    const password = document.getElementById("passwordInput").value.trim();
 
     // Cek apakah ada form yang kosong
-    if (!name || !phone || !email || !password) {
+    if (!name || !phone || !email ) {
         Swal.fire({
             icon: "error",
             title: "Form Belum Lengkap",
@@ -34,16 +33,6 @@ function register() {
             icon: "error",
             title: "Email Gak Valid",
             text: "Masukin email yang bener dong, pastikan formatnya kayak xxx@yyy.zzz.",
-        });
-        return;
-    }
-
-    // Validasi password
-    if (password.length < 6) {
-        Swal.fire({
-            icon: "error",
-            title: "Password Terlalu Pendek",
-            text: "Password minimal 6 karakter, yuk lebih kuat sedikit.",
         });
         return;
     }
