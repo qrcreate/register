@@ -43,7 +43,7 @@ function register() {
         email: email,
     };
 
-    const target_url = "https://asia-southeast2-qrcreate-447114.cloudfunctions.net/qrcreate/qr/user";
+    const target_url = "https://asia-southeast2-qrcreate-447114.cloudfunctions.net/qrcreate/data/user";
 
     // Notifikasi loading saat proses pendaftaran
     Swal.fire({
