@@ -1,5 +1,6 @@
 import { postJSON } from 'https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.0/api.js';
 import Swal from "https://cdn.jsdelivr.net/npm/sweetalert2@11/src/sweetalert2.js";
+import {redirect} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.0.4/url.js";
 
 function register() {
     console.log("Tombol daftar diklik"); // Debugging log
@@ -72,7 +73,7 @@ function register() {
                     timer: 3000,
                     timerProgressBar: true,
                     willClose: () => {
-                        window.location.href = "../home.html";
+                        redirect("/login");
                     },
                 });
             } else {
